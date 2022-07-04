@@ -1,0 +1,6 @@
+name: softball-stat-tracker
+org: serverlessinc
+description: Deploys a serverless react website on AWS
+keywords: aws, serverless, website, frontend, react
+repo: https://github.com/serverless-components/website
+license: MIT

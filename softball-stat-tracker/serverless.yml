@@ -1,0 +1,10 @@
+name: softball-stat-tracker
+component: website               # (required) name of the component. In that case, it's website.
+stage: dev                       # (optional) serverless dashboard stage. default is dev.
+
+inputs:
+  src: ./src                     # (optional) path to the source folder. default is a hello world html file.
+  region: us-east-2              # (optional) aws region to deploy to. default is us-east-1.\
+  domain: softballstattracker.com
+  indexDocument: index.html      # (optional) index document for your website. default is index.html.
+  errorDocument: index.html      # (optional) error document for your website. default is index.html.
