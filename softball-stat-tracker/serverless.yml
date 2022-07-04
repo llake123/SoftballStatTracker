@@ -3,8 +3,9 @@ component: website               # (required) name of the component. In that cas
 stage: dev                       # (optional) serverless dashboard stage. default is dev.
 
 inputs:
-  src: ./src                     # (optional) path to the source folder. default is a hello world html file.
   region: us-east-2              # (optional) aws region to deploy to. default is us-east-1.\
   domain: softballstattracker.com
-  indexDocument: index.html      # (optional) index document for your website. default is index.html.
-  errorDocument: index.html      # (optional) error document for your website. default is index.html.
+  src:
+    src: ./src          # the input source folder
+    hook: npm run build # the hook you want to run
+    dist: ./dist        # the output dist folder
